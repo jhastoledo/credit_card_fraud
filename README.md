@@ -13,7 +13,7 @@
 > estatística (Mann-Whitney), `Pipeline` sklearn (`RobustScaler → XGBoost`),
 > tuning via Optuna e interpretabilidade com SHAP.
 
-🔗 **[Acessar App no Streamlit Cloud](#)** _(atualizar após deploy)_
+🔗 **[Acessar App no Streamlit Cloud](https://creditcardfraud-cmcvsav6capkwmbjkeuthe.streamlit.app/)**
 
 ---
 
