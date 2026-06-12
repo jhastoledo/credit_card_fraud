@@ -1,0 +1,18 @@
+{
+  "modelo": "XGBoost",
+  "threshold": 0.26357823610305786,
+  "pr_auc_cv": 0.8572967290645535,
+  "pr_auc_teste": 0.8260539464057822,
+  "roc_auc_teste": 0.9740981949498732,
+  "recall_teste": 0.8105263157894737,
+  "precision_teste": 0.9506172839506173,
+  "f1_teste": 0.875,
+  "hiperparametros": {
+    "xgb_n_estimators": 526,
+    "xgb_max_depth": 10,
+    "xgb_lr": 0.09385355753654316,
+    "xgb_subsample": 0.7274524626531118,
+    "xgb_colsample": 0.8562435165095661
+  },
+  "scale_pos_weight": 599.4761904761905
+}

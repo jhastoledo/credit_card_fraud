@@ -1,0 +1,36 @@
+projeto:
+  nome: "credit_card_fraud"
+  versao: "0.1.0"
+  autor: "Jhonnes Toledo"
+  descricao: "Detecção de Fraude em Cartão de Crédito"
+
+caminhos:
+  dados_raw: "data/raw/"
+  dados_processed: "data/processed/"
+  modelos: "models/"
+  reports: "reports/"
+  figures: "reports/figures/"
+  dados_brutos: "creditcard.zip"        # nome do dataset bruto
+
+dados:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  stratify: true
+  target_col: "Class"                    # alvo (null para clustering)
+  id_col: null                         # coluna de ID, se houver
+
+modelo:
+  tipo: "random_forest"
+  params:
+    random_state: 42
+  cv_folds: 5
+  scoring: "average_precision"
+
+avaliacao:
+  metricas: ["accuracy", "precision", "recall", "f1", "roc_auc"]
+  threshold: 0.5
+
+deploy:
+  plataforma: "streamlit_cloud"
+  porta: 8501
